@@ -2,17 +2,13 @@
     box-sizing: border-box;
 
 
-    &event__link {
+    &__link {
         text-decoration: none;
         display: flex;
         flex-direction: column;
         height: 100%;
     }
 
-    &__link:hover .card-event__title {
-        color: #A51505;
-        text-decoration-color: #A51505;
-    }
 
     &__picture {
         position: relative;
@@ -47,7 +43,13 @@
         font-weight: 700;
         line-height: normal;
         color: #1F1E1E;
-        transition: color 0.2s;
+        text-decoration-color: transparent;
+        transition: color 0.2s, text-decoration-color 0.23s;
+    }
+
+    &__title:hover {
+        color: #A51505;
+        text-decoration-color:#A51505;
     }
 
     &__text {
